@@ -12,6 +12,10 @@ func main() {
 	// re-assign value
 	card2 = "Another ace of spades that's been re-assigned"
 
+	// constants
+	const Truth = true
+
 	fmt.Println("First card is", card)
 	fmt.Println("Second card is", card2)
+	fmt.Printf("Constant is of type %T \n", Truth)
 }
