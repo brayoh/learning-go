@@ -2,14 +2,13 @@ package main
 
 func main() {
 	// declare new slice
-	cards := deck{"Two of Ace", newCard()}
+	cards := newDeck()
 
 	// append to a slice
 	cards = append(cards, "Six of spades")
 
-	cards.print()
-}
+	hand, _ := deal(cards, 5)
 
-func newCard() string {
-	return "The new card is five of diamonds"
+	// print the cards
+	hand.print()
 }
