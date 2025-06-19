@@ -12,7 +12,7 @@ func newDeck() deck {
 
 	cardSuits := []string{"Spades", "Flowers", "Aces", "Diamonds", "Hearts", "Clubs"}
 
-	cardValues := []string{"Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"}
+	cardValues := []string{"Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"}
 
 	for _, suit := range cardSuits {
 		for _, value := range cardValues { // the underscore is used to ignore the index and only use the value
@@ -20,6 +20,7 @@ func newDeck() deck {
 			cards = append(cards, suit+" of "+value)
 		}
 	}
+	
 	return cards
 }
 
