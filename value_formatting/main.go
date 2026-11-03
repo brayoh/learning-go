@@ -1,6 +1,7 @@
+// Formatting string in GO using various formatting verbs
+
 package main
 
-// Formatting string in GO using various formatting verbs
 import "fmt"
 
 type Area struct {
